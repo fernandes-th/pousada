@@ -1,0 +1,144 @@
+/* configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container-centralizado {
+    text-align: center;
+}
+
+.azul {
+    color: var(--azul);
+}
+
+:root {
+    --cinza: #3d3d3d;
+    --cinza2: #646363;
+    --azul: #6592c9;
+    --branco: #fff;
+}
+
+/* fim das configurações gerais */
+
+/* header */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+.header-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.header-titulo {
+    color: var(--cinza);
+    font-size: 22px;
+}
+
+.header-menu-links a {
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 20px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.header-menu-links a:hover {
+    border-bottom: 2px solid var(--azul);
+}
+
+/* fim do header */
+
+/* início do main */
+
+/* banner */
+.banner {
+    background-image: url('img/img-fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.banner-caixa-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 500px;
+    height: 180px;
+    color: var(--branco);
+    background-color: rgba(10,144,119,0.7);
+    border: 1px solid var(--branco);
+    box-sizing: content-box;
+    padding: 15px 10px;
+}
+.banner-caixa-titulo h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+/* fim do banner */
+
+/* quartos */
+
+.quartos {
+    margin-bottom: 50px;
+}
+
+.quartos-texto h2 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 46px;
+    margin-bottom: 20px;
+    color: var(--cinza);
+}
+
+.quartos-texto p {
+    line-height: 36px;
+    color: var(--cinza2);
+}
+
+.quartos-galeria {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.quarto-box {
+    width: calc(100% / 3);
+    border-bottom: 2px solid rgba(10,144,119,0.7);
+}
+
+.quarto-box figure img {
+    height: 200px;
+}
+
+.quarto-box figcaption {
+    padding: 20px 10px;
+    color: var(--cinza2);
+}
+
